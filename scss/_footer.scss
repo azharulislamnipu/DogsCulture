@@ -1,0 +1,47 @@
+/*  7.Footer Style CSS
+/*----------------------------------------*/
+.footer-area{
+  position: relative;
+  overflow: hidden;
+  background-color: $dark-blue;
+  padding-top: 60px;
+
+  hr{
+    border-top: 1px solid #1d3658;
+    margin: 0;
+  }
+}
+
+.footer-log{
+  min-height: 55px;
+}
+.footer-top{
+  color: $white;
+  padding: 40px 0;
+  p{
+    color: $white;
+  }
+  a{
+    color: $white;
+    &:hover{
+      color: $light-blue;
+    }
+  }
+}
+.footer-title{
+  margin-bottom: 35px;
+}
+.footer-menu{
+  li{
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.footer-bottom{
+  padding: 32px 0;
+}
+.copy-right-text{
+  color:#999999;
+}

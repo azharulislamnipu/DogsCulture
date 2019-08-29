@@ -1,0 +1,62 @@
+/*  6. Newsletter Style CSS
+/*----------------------------------------*/
+.newsletter {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+  background-color: $white;
+}
+
+.news-inner-box {
+  padding: 66px 0px 100px 50px;
+  background-color: $white;
+  box-shadow: 0px 3px 43px 0px rgba(7, 51, 112, 0.08);
+  @media #{$lg-layout} {
+    padding: 37px 0px 50px 50px;
+  }
+  @media #{$md-layout,$xs-layout} {
+    padding: 66px 30px 100px 30px;
+  }
+  .pb-150{
+    @media #{$md-layout,$xs-layout} {
+      padding-bottom: 30px!important;
+    }
+  }
+
+  p {
+    max-width: 462px;
+  }
+}
+
+.news-img-box {
+  padding: 115px 15px 20px 30px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 85%;
+}
+
+.subscribe-form {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 19px 48px 0px rgba(7, 51, 112, 0.21);
+  z-index: 999;
+
+  @media #{$md-layout,$xs-layout} {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+}
+
+.input-group .form-control {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: $lato;
+  font-size: $base-font-size;
+}

@@ -1,0 +1,47 @@
+/*  5. Blog Style CSS
+/*----------------------------------------*/
+.blog-area{
+  position: relative;
+  overflow: hidden;
+  padding: 110px 0;
+
+  div[class*=col-]{
+    padding-bottom: 30px;
+  }
+
+}
+.blog{
+  background-color: $white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 29, 103, 0.1);
+}
+.blog-image-box{
+    border-radius: 15px;
+    background-color: rgb(229, 239, 252);
+    max-width: 370px;
+    min-height: 280px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.blog-inner-box{
+  padding: 40px 30px;
+}
+.publish-info{
+  margin-bottom: 20px;
+  li{
+    &.list-inline-item:not(:last-child) {
+      margin-right: 30px;
+      @media #{$lg-layout} {
+        margin-right: 7px;
+      }
+    }
+    img{
+      margin-bottom: 5px;
+    }
+    span{
+      font-family: $lato;
+      font-size: $base-font-size+2;
+    }
+  }
+}

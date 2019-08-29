@@ -2,7 +2,7 @@
  Template Name: DogsCulture Version: 1
 
 -----------------------------------------------------------------------------------  CSS INDEX ===================
-	 1. Template default CSS 2. Header style 3. Slider style 4. Banner style 5. Secting title style 6. Product style 7. Testimonial style 8. Feature style 9. Blog style 10. Footer style 11. Instagram style 12. Breadcrumb style 13. Shop style 14. Sidebar style 15. Product details style 16. Cart style 17. Login register style 18. Blog details style 19. About us style 20. Contact us style 21. Compare style 22. Checkout style 23. My account style 
+	 1. Template default CSS 2. Header style 3. Banner style 4. Service Style 5. Blog style 6. Newsletter style 7. Footer style 8. Feature style 9. Blog style 10. Footer style 11. Instagram style 12. Breadcrumb style 13. Shop style 14. Sidebar style 15. Product details style 16. Cart style 17. Login register style 18. Blog details style 19. About us style 20. Contact us style 21. Compare style 22. Checkout style 23. My account style 
 -----------------------------------------------------------------------------------*/
 .single-testimonial p { font-size: 16px; line-height: 32px; margin: 30px auto 32px; width: 80%; }
 @media only screen and (min-width: 1200px) and (max-width: 1365px) { .single-testimonial p { width: 90%; } }
@@ -24,10 +24,9 @@ h1 { font-size: 50px; line-height: 1.2; }
 h2 { font-size: 40px; line-height: 0.75; }
 
 h3 { font-size: 25px; line-height: 2.16; }
+@media only screen and (min-width: 992px) and (max-width: 1199.98px), only screen and (min-width: 768px) and (max-width: 991.98px), only screen and (max-width: 767px) { h3 { font-size: 20px; } }
 
 h4 { font-size: 20px; line-height: 1.4; }
-
-h5 { font-size: 18px; line-height: 1.556; }
 
 h5 { font-size: 18px; line-height: 1.556; }
 
@@ -37,15 +36,23 @@ p { margin-bottom: 15px; }
 
 p:last-child { margin-bottom: 0; }
 
-a, button { color: #4d4d4d; font-family: "Lato", sans-serif; font-size: 15px; line-height: inherit; text-decoration: none; cursor: pointer; }
+.btn { padding: 20px 30px; font-family: "Lato", sans-serif; font-size: 15px; background-color: #0060e2; color: #ffffff; border-radius: 10px; box-shadow: none; outline: none; }
+.btn:hover, .btn:focus { box-shadow: none; outline: none; background-color: #407aff; color: #ffffff; }
+
+a.btn { background-color: #0060e2; color: #ffffff; }
+a.btn:hover, a.btn:focus { box-shadow: none; outline: none; background-color: #407aff; color: #ffffff; }
+
+a, button { color: #29283c; font-family: "Lato", sans-serif; line-height: inherit; text-decoration: none; cursor: pointer; }
 
 a, button, img, input, span { transition: all .3s ease 0s; }
+
+img { max-width: 100%; }
 
 *:focus { outline: none !important; }
 
 a:focus { color: inherit; outline: none; text-decoration: none; }
 
-a:hover { text-decoration: none; color: #0060e2; }
+a:hover { text-decoration: none; color: #407aff; }
 
 button, input[type="submit"] { cursor: pointer; }
 
@@ -55,11 +62,23 @@ ul { list-style: outside none none; margin: 0; padding: 0; }
 -----------------------------------------*/
 .fix { overflow: hidden; }
 
+.border { border: 1px solid #e1e1e1; }
+
 .clear { clear: both; }
 
 .section { float: left; width: 100%; }
 
 .bg-img { background-position: center center; background-size: cover; }
+
+.box-shadow { box-shadow: 0px 5px 50px 0px rgba(7, 51, 112, 0.08); }
+
+.bg-whithesmoke { background-color: #f6f8fc; }
+
+.bg-white { background-color: #ffffff; }
+
+.bg-blue { background-color: #0060e2; }
+
+.text-blue { color: #0060e2; }
 
 /************************* Margin top
 *************************/
@@ -598,5 +617,121 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder { opacity: 1; -ms-fi
 /*-- - Background Color
 ------------------------------------------*/
 .wrapper { overflow-x: hidden; }
+
+/*  2. Header Style CSS
+/*----------------------------------------*/
+.header { height: 96px; position: fixed; z-index: 999; top: 0; width: 100%; text-align: center; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; background-color: #f6f8fc; }
+
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991.98px) { .bg-nav { background-color: #f6f8fc; } }
+
+.header.sticky { height: 96px; box-sizing: border-box; background-color: white; box-shadow: 0px 5px 50px 0px rgba(7, 51, 112, 0.08); z-index: 9999999999999999999999999999999999999; animation: stuckMoveDown .6s; }
+
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991.98px) { .header.sticky .bg-nav { background-color: #ffffff; } }
+
+@keyframes stuckMoveDown { 0% { transform: translateY(-100%); }
+  100% { transform: translateY(0); } }
+@keyframes stuckMoveUp { 0% { transform: translateY(100%); }
+  100% { transform: translateY(0); } }
+@keyframes stuckFadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+.navbar-brand { height: 45px; padding: 0; margin: 0; width: auto; display: block; }
+
+.navbar { padding: 20px 0; }
+
+.navbar-toggler { color: #4d4d4d; font-size: 17px; border-color: #4d4d4d; border-radius: 0; font-size: 30px; padding: 5px 10px; outline: none; }
+
+.navbar-toggler[aria-expanded='true'] { color: #0060e2; border-color: #0060e2; }
+
+.navbar-expand-lg .navbar-nav .nav-item { text-align: left; }
+.navbar-expand-lg .navbar-nav .nav-item:first-child .nav-link { padding-left: 0; }
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991.98px) { .navbar-expand-lg .navbar-nav .nav-item:first-child .nav-link { padding-left: 26px; } }
+
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link { color: #0060e2; position: relative; /* &:before{ content: '\f141'; font-family: "Font Awesome 5 Free"; position: absolute; left: 0; top:50%; }*/ }
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link:before { content: ''; position: absolute; left: 0; top: 50%; background: url("../img/nav-active.png") no-repeat center center; -webkit-background-size: auto; -moz-background-size: auto; background-size: auto; height: 32px; width: 29px; }
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991.98px) { .navbar-expand-lg .navbar-nav .nav-item.active .nav-link:before { left: 26px; } }
+
+.navbar-expand-lg .navbar-nav .nav-link { font-family: "Lato", sans-serif; color: #4d4d4d; font-weight: 700; font-size: 18px; line-height: 3.111; padding: 0 26px; transition: all 0.5s ease; }
+.navbar-expand-lg .navbar-nav .nav-link:hover { color: #0060e2; }
+
+.dropdown:hover > .dropdown-menu { display: block; transition: all 0.5s ease; border-radius: 0; padding: 0; }
+
+.dropdown > .dropdown-toggle:active { pointer-events: none; transition: all 0.5s ease; }
+
+.dropdown-item { transition: all 0.5s ease; font-size: 18px; font-family: "Lato", sans-serif; text-transform: uppercase; font-weight: 600; }
+.dropdown-item:hover { color: #0060e2; background-color: #29283c; transition: all 0.5s ease; }
+
+.dropdown-toggle::after { display: none; }
+
+/*  3. Banner Style CSS
+/*----------------------------------------*/
+.banner-area { position: relative; overflow: hidden; min-height: 800px; background-repeat: no-repeat; background-position: center center; background-size: cover; }
+
+.banner-caption { padding: 290px 0 220px 0; }
+.banner-caption h1 { margin-bottom: 35px; }
+.banner-caption p { font-size: 16px; }
+
+/*  4. Service Style CSS
+/*----------------------------------------*/
+.service-area { position: relative; overflow: hidden; padding: 110px 0 40px 0; }
+
+.single-service { margin-bottom: 60px; }
+@media only screen and (max-width: 767px) { .single-service { text-align: center; } }
+.single-service img { margin-bottom: 15px; }
+.single-service h3 { margin-bottom: 15px; }
+
+/*  5. Blog Style CSS
+/*----------------------------------------*/
+.blog-area { position: relative; overflow: hidden; padding: 110px 0; }
+.blog-area div[class*=col-] { padding-bottom: 30px; }
+
+.blog { background-color: #ffffff; border-radius: 15px; box-shadow: 0px 5px 10px 0px rgba(0, 29, 103, 0.1); }
+
+.blog-image-box { border-radius: 15px; background-color: #e5effc; max-width: 370px; min-height: 280px; background-repeat: no-repeat; background-position: center center; background-size: cover; }
+
+.blog-inner-box { padding: 40px 30px; }
+
+.publish-info { margin-bottom: 20px; }
+.publish-info li.list-inline-item:not(:last-child) { margin-right: 30px; }
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) { .publish-info li.list-inline-item:not(:last-child) { margin-right: 7px; } }
+.publish-info li img { margin-bottom: 5px; }
+.publish-info li span { font-family: "Lato", sans-serif; font-size: 17px; }
+
+/*  6. Newsletter Style CSS
+/*----------------------------------------*/
+.newsletter { position: relative; overflow: hidden; padding: 100px 0; background-color: #ffffff; }
+
+.news-inner-box { padding: 66px 0px 100px 50px; background-color: #ffffff; box-shadow: 0px 3px 43px 0px rgba(7, 51, 112, 0.08); }
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) { .news-inner-box { padding: 37px 0px 50px 50px; } }
+@media only screen and (min-width: 768px) and (max-width: 991.98px), only screen and (max-width: 767px) { .news-inner-box { padding: 66px 30px 100px 30px; } }
+@media only screen and (min-width: 768px) and (max-width: 991.98px), only screen and (max-width: 767px) { .news-inner-box .pb-150 { padding-bottom: 30px !important; } }
+.news-inner-box p { max-width: 462px; }
+
+.news-img-box { padding: 115px 15px 20px 30px; background-repeat: no-repeat; background-size: auto; background-position: center 85%; }
+
+.subscribe-form { position: absolute; width: 100%; top: 30%; padding: 10px; border-radius: 8px; background-color: white; box-shadow: 0px 19px 48px 0px rgba(7, 51, 112, 0.21); z-index: 999; }
+@media only screen and (min-width: 768px) and (max-width: 991.98px), only screen and (max-width: 767px) { .subscribe-form { position: relative; margin-bottom: 40px; } }
+
+.input-group .form-control { padding: 10px 40px; border: none; border-radius: 0; box-shadow: none; font-family: "Lato", sans-serif; font-size: 15px; }
+
+/*  7.Footer Style CSS
+/*----------------------------------------*/
+.footer-area { position: relative; overflow: hidden; background-color: #122238; padding-top: 60px; }
+.footer-area hr { border-top: 1px solid #1d3658; margin: 0; }
+
+.footer-log { min-height: 55px; }
+
+.footer-top { color: #ffffff; padding: 40px 0; }
+.footer-top p { color: #ffffff; }
+.footer-top a { color: #ffffff; }
+.footer-top a:hover { color: #407aff; }
+
+.footer-title { margin-bottom: 35px; }
+
+.footer-menu li { margin-bottom: 10px; }
+.footer-menu li:last-child { margin-bottom: 0; }
+
+.footer-bottom { padding: 32px 0; }
+
+.copy-right-text { color: #999999; }
 
 /*# sourceMappingURL=style.css.map */

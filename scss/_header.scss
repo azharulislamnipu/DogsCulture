@@ -1,2 +1,171 @@
-/*  1. Header Style CSS
+/*  2. Header Style CSS
 /*----------------------------------------*/
+.header {
+  height: 96px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-color: $whitesmoke;
+}
+.bg-nav{
+  @media #{$xs-layout,$md-layout} {
+    background-color: $whitesmoke;
+  }
+}
+.header.sticky {
+  height: 96px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 50px 0px rgba(7, 51, 112, 0.08);
+  z-index: 9999999999999999999999999999999999999;
+  animation: stuckMoveDown .6s;
+}
+.header.sticky {
+
+  .bg-nav{
+    @media #{$xs-layout,$md-layout} {
+      background-color: $white;
+    }
+  }
+}
+
+@keyframes stuckMoveDown {
+  0% {
+    transform: translateY(-100%)
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+
+@keyframes stuckMoveUp {
+  0% {
+    transform: translateY(100%)
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+
+@keyframes stuckFadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+.navbar-brand {
+  height: 45px;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  display: block;
+}
+
+.navbar {
+  padding: 20px 0;
+}
+
+.navbar-toggler{
+  color: $dark;
+  font-size: $base-font-size+2;
+  border-color: $dark;
+  border-radius: 0;
+  font-size: 30px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.navbar-toggler[aria-expanded = 'true']{
+  color: $theme-color;
+  border-color: $theme-color;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item{
+  text-align: left;
+  &:first-child {
+    .nav-link{
+      padding-left: 0;
+      @media #{$xs-layout,$md-layout} {
+        padding-left: 26px;
+      }
+    }
+  }
+}
+.navbar-expand-lg .navbar-nav .nav-item.active {
+  .nav-link{
+    color: $theme-color;
+    position: relative;
+   /* &:before{
+      content: '\f141';
+      font-family: "Font Awesome 5 Free";
+      position: absolute;
+      left: 0;
+      top:50%;
+    }*/
+
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top:50%;
+      background: url('#{$assetPath}/nav-active.png') no-repeat center center;
+      -webkit-background-size: auto;
+      -moz-background-size: auto;
+      background-size: auto;
+      height: 32px;
+      width: 29px;
+      @media #{$xs-layout,$md-layout} {
+        left: 26px;
+      }
+    }
+
+  }
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-family: $lato;
+  color: $dark;
+  font-weight: $bold;
+  font-size: ceil($base-font-size*1.2);
+  line-height: 3.111;
+  padding: 0 26px;
+  transition: all 0.5s ease;
+  &:hover{
+    color: $theme-color;
+  }
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  transition: all 0.5s ease;
+  border-radius: 0;
+  padding: 0;
+}
+
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+.dropdown-item {
+  transition: all 0.5s ease;
+  font-size: ceil($base-font-size*1.2);
+  font-family: $lato;
+  text-transform: uppercase;
+  font-weight: $semi-bold;
+  &:hover {
+    color: $theme-color;
+    background-color: $black;
+    transition: all 0.5s ease;
+  }
+}
+.dropdown-toggle::after {
+  display: none;
+}
+
+

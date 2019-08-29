@@ -10,11 +10,11 @@
 	
     1. Template default CSS
     2. Header style
-    3. Slider style
-    4. Banner style
-    5. Secting title style
-    6. Product style
-    7. Testimonial style
+    3. Banner style
+    4. Service Style
+    5. Blog style
+    6. Newsletter style
+    7. Footer style
     8. Feature style
     9. Blog style
     10. Footer style
@@ -35,7 +35,12 @@
 -----------------------------------------------------------------------------------*/
 @import 'variabls';
 @import 'common';
-
+@import "header";
+@import "banner";
+@import "service";
+@import "blog";
+@import "newletter";
+@import "footer";
 
 
 
