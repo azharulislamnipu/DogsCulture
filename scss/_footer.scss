@@ -5,13 +5,11 @@
   overflow: hidden;
   background-color: $dark-blue;
   padding-top: 60px;
-
   hr{
     border-top: 1px solid #1d3658;
     margin: 0;
   }
 }
-
 .footer-log{
   min-height: 55px;
 }
@@ -28,14 +26,23 @@
     }
   }
 }
-.footer-title{
+.widget-title{
   margin-bottom: 35px;
+}
+.widget{
+  margin-bottom: 45px;
+  @media #{$xs-layout} {
+    text-align: center;
+  }
 }
 .footer-menu{
   li{
     margin-bottom: 10px;
     &:last-child{
       margin-bottom: 0;
+    }
+    a{
+      font-size: $base-font-size;
     }
   }
 }

@@ -3,17 +3,80 @@
 .banner-area{
   position: relative;
   overflow: hidden;
-  min-height: 800px;
+  padding: 290px 0 220px 0;
   background-repeat: no-repeat;
   background-position: center center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-size: cover;
 }
 .banner-caption{
-  padding: 290px 0 220px 0;
   h1{
-    margin-bottom: 35px;
+     margin-bottom: 35px;
   }
   p{
     font-size: $base-font-size+1;
+    margin-bottom: 40px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.adjust-banner{
+  padding: 170px 0 0 0;
+  .banner-caption {
+    max-width: 546px;
+    p {
+      font-size: $base-font-size;
+    }
+  }
+}
+.small-banner{
+  background-color: $light-blue;
+  padding: 40px 0;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 5px;
+
+  h3{
+    margin-bottom: 0;
+    font-size: 25px;
+    line-height: 0.743;
+    color: $white;
+  }
+}
+.large-banner{
+  background-color: $light-blue;
+  padding: 60px 0;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 5px;
+  h3{
+    margin-bottom: 0;
+    font-size: 35px;
+    line-height: 0.743;
+    color: $white;
+  }
+}
+.medium-banner{
+  background-color: $light-blue;
+  padding: 45px 0;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 5px;
+  h3{
+    margin-bottom: 0;
+    font-size: 35px;
+    line-height: 0.743;
+    color: $white;
   }
 }

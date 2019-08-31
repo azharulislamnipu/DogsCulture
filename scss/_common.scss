@@ -81,7 +81,8 @@ p {
 p:last-child {
   margin-bottom: 0;
 }
-.btn{
+
+.btn {
   padding: 20px 30px;
   font-family: $lato;
   font-size: $base-font-size;
@@ -90,17 +91,20 @@ p:last-child {
   border-radius: 10px;
   box-shadow: none;
   outline: none;
-  &:hover,&:focus{
+
+  &:hover, &:focus {
     box-shadow: none;
     outline: none;
     background-color: $light-blue;
     color: $white;
   }
 }
-a.btn{
+
+a.btn {
   background-color: $blue;
   color: $white;
-  &:hover,&:focus{
+
+  &:hover, &:focus {
     box-shadow: none;
     outline: none;
     background-color: $light-blue;
@@ -124,9 +128,11 @@ input,
 span {
   transition: all .3s ease 0s;
 }
-img{
+
+img {
   max-width: 100%;
 }
+
 *:focus {
   outline: none !important;
 }
@@ -153,7 +159,9 @@ ul {
   padding: 0;
 }
 
-
+.font-size-35 {
+  font-size: ceil($base-font-size*2.333);
+}
 
 //.container{
 //  max-width: 1215px;
@@ -165,8 +173,9 @@ ul {
 .fix {
   overflow: hidden
 }
-.border{
-  border:1px solid $light-gray;
+
+.border {
+  border: 1px solid $light-gray;
 }
 
 .clear {
@@ -185,21 +194,26 @@ ul {
 }
 
 
-.box-shadow{
+.box-shadow {
   box-shadow: 0px 5px 50px 0px rgba(7, 51, 112, 0.08);
 }
-.bg-whithesmoke{
+
+.bg-whithesmoke {
   background-color: $whitesmoke;
 }
-.bg-white{
+
+.bg-white {
   background-color: $white;
 }
-.bg-blue{
+
+.bg-blue {
   background-color: $blue;
 }
-.text-blue{
+
+.text-blue {
   color: $blue;
 }
+
 /*************************
          Margin top
 *************************/
@@ -1303,6 +1317,71 @@ textarea:-ms-input-placeholder {
   color: $dark;
 }
 
+ol, ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.input-group .form-control{
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: $lato;
+  font-size: $base-font-size;
+  &::-webkit-input-placeholder {
+    color: #b1b1b1;
+  }
+
+  &::-moz-placeholder {
+    color: #b1b1b1;
+  }
+
+  &:-ms-input-placeholder {
+    color: #b1b1b1;
+  }
+
+  &:-moz-placeholder {
+    color: #b1b1b1;
+  }
+}
+
+.form-control {
+  padding: 10px 15px;
+  border-color: $gray;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: $lato;
+  font-size: $base-font-size;
+  &::-webkit-input-placeholder {
+    color: #b1b1b1;
+  }
+
+  &::-moz-placeholder {
+    color: #b1b1b1;
+  }
+
+  &:-ms-input-placeholder {
+    color: #b1b1b1;
+  }
+
+  &:-moz-placeholder {
+    color: #b1b1b1;
+  }
+}
+
+.card {
+  border-radius: 5px;
+  background-color: $white;
+  padding: 35px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 29, 103, 0.15);
+  border: 0;
+  @media #{$xs-layout} {
+    padding: 20px;
+  }
+}
+
 /*--
     - Background Color
 ------------------------------------------*/
@@ -1310,8 +1389,9 @@ textarea:-ms-input-placeholder {
 .wrapper {
   overflow-x: hidden;
 }
-
-
+.page-wrapper{
+  padding: 160px 0 100px 0;
+}
 
 
 

@@ -1,0 +1,28 @@
+/*  8. Social Style CSS
+/*----------------------------------------*/
+.social-link {
+  li{
+    &.list-inline-item:not(:last-child) {
+      margin-right: 20px;
+    }
+    a{
+      width: 30px;
+      height: 30px;
+      display: block;
+      border-radius: 50%;
+      line-height: 30px;
+      background-color: transparent;
+      color: #7b8189;
+      border: 1px solid #7b8189;
+      text-align: center;
+      transition: 1s ease-in;
+      font-size: $base-font-size;
+      &:hover{
+        background-color: $white;
+        color: #1385ff;
+        transition: 1s ease-in;
+        border: 1px solid $white;
+      }
+    }
+  }
+}

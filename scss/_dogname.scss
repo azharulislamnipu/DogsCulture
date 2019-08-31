@@ -1,0 +1,49 @@
+/*  9. Dog Name Style CSS
+/*----------------------------------------*/
+.dog-name-area{
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+.dog-img-circle-box{
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background-color: #99b1e8;
+  border-radius: 50%;
+  margin: 0;
+  -moz-background-size: auto;
+  -webkit-background-size: auto;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: 1s ease-in-out;
+}
+h3.dog-name-title{
+  margin-bottom: 0;
+  line-height: 1.7;
+  transition: 1s ease-in-out;
+  color: $black;
+}
+.dog-card{
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 0px 20px 50px 0px rgba(7, 51, 112, 0.12);
+  padding: 15px;
+  a{
+    transition: 1s ease-in-out;
+  }
+  a:hover .dog-img-circle-box{
+    background-color: $blue;
+    transition: 1s ease-in-out;
+  }
+  a:hover h3.dog-name-title{
+    color: $light-blue;
+    transition: 1s ease-in-out;
+  }
+}
+.dog-list{
+  div[class*=col-]{
+    padding-bottom: 30px;
+  }
+}

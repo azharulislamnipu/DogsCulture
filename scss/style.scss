@@ -15,10 +15,10 @@
     5. Blog style
     6. Newsletter style
     7. Footer style
-    8. Feature style
-    9. Blog style
-    10. Footer style
-    11. Instagram style
+    8. Social style
+    9. Dog Name style
+    10. Search bar style
+    11. breed style
     12. Breadcrumb style
     13. Shop style
     14. Sidebar style
@@ -41,7 +41,10 @@
 @import "blog";
 @import "newletter";
 @import "footer";
-
+@import "social_link";
+@import "dogname";
+@import "search";
+@import "bread";
 
 
 
