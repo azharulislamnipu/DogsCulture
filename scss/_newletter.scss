@@ -51,5 +51,8 @@
     box-shadow: none;
     font-family: $lato;
     font-size: $base-font-size;
+    @media #{$xss-layout} {
+      padding: 10px 15px;
+    }
   }
 }

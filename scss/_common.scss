@@ -91,7 +91,9 @@ p:last-child {
   border-radius: 10px;
   box-shadow: none;
   outline: none;
-
+  @media #{$xss-layout} {
+    padding: 20px 15px;
+  }
   &:hover, &:focus {
     box-shadow: none;
     outline: none;
