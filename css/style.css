@@ -80,7 +80,27 @@ ul { list-style: outside none none; margin: 0; padding: 0; }
 
 .bg-blue { background-color: #0060e2; }
 
+.text-light-blue { color: #407aff; }
+
 .text-blue { color: #0060e2; }
+
+.bg-lightsteelblue { background-color: #c8d1e6 !important; }
+
+.f-50 { font-size: 50px; }
+
+.font-45 { font-size: 45px; }
+
+.f-40 { font-size: 40px; }
+
+.f-35 { font-size: 35px; }
+
+.f-30 { font-size: 30px; }
+
+.f-25 { font-size: 25px; }
+
+.f-22 { font-size: 22px; }
+
+.f-20 { font-size: 20px; }
 
 /************************* Margin top
 *************************/
@@ -631,13 +651,14 @@ ol, ul { padding-left: 0; list-style: none; margin-bottom: 30px; }
 .form-control:-moz-placeholder { color: #b1b1b1; }
 
 .card { border-radius: 5px; background-color: #ffffff; padding: 35px; box-shadow: 0px 2px 5px 0px rgba(0, 29, 103, 0.15); border: 0; }
+@media only screen and (min-width: 768px) and (max-width: 991.98px) { .card { padding: 15px; } }
 @media only screen and (max-width: 767px) { .card { padding: 20px; } }
 
 /*-- - Background Color
 ------------------------------------------*/
 .wrapper { overflow-x: hidden; }
 
-.page-wrapper { padding: 160px 0 100px 0; }
+.page-wrapper { padding: 160px 0 100px 0 !important; }
 
 /*  2. Header Style CSS
 /*----------------------------------------*/
@@ -816,7 +837,6 @@ h4.comment-count-title { margin-bottom: 60px; }
 .side-bar .widget .blog-inner-box { padding: 20px 0; }
 .side-bar .widget .blog-inner-box h4 { font-size: 15px; }
 
-.post-category { margin-bottom: 40px; }
 .post-category li { clear: both; }
 .post-category li a { display: block; }
 
@@ -919,11 +939,12 @@ h3.dog-name-title { margin-bottom: 0; line-height: 1.7; transition: 1s ease-in-o
 @media only screen and (min-width: 768px) and (max-width: 991.98px), only screen and (min-width: 992px) and (max-width: 1199.98px) { .breed-content-box { padding: 40px 15px; } }
 @media only screen and (max-width: 767px) { .breed-content-box { padding: 40px 20px; } }
 
-.breed-info li { width: 48%; background-color: #eef1f7; padding: 15px 8px; margin-bottom: 10px; }
+.breed-info li { width: 48%; margin-bottom: 10px; }
 .breed-info li.list-inline-item:not(:last-child) { margin-right: 5px; }
 .breed-info li.list-inline-item:nth-child(2n) { margin-right: 0; }
-.breed-info li p { margin: 0; }
-@media only screen and (min-width: 992px) and (max-width: 1199.98px) { .breed-info li p { font-size: 12px; } }
+.breed-info li a { background-color: #eef1f7; padding: 15px 8px; display: block; margin: 0; }
+.breed-info li a:hover { background-color: #407aff; color: #ffffff; }
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) { .breed-info li a { font-size: 12px; } }
 
 a.read-more { font-size: 16px; }
 
@@ -934,5 +955,76 @@ a.read-more { font-size: 16px; }
 .pagination .page-item.active .page-link { background-color: #407aff; color: #ffffff; }
 
 .breed-content p { margin-bottom: 60px; }
+
+.single-breed-img-box { display: block; border-radius: 15px; background-color: #e5effc; min-height: 400px; background-repeat: no-repeat; background-position: center center; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover; }
+@media only screen and (min-width: 768px) and (max-width: 991.98px), only screen and (max-width: 767px) { .single-breed-img-box { min-height: 300px; } }
+
+.single-breed-content-box { padding: 35px 0; }
+.single-breed-content-box p { color: #4d4d4d; }
+.single-breed-content-box h4 { margin-bottom: 20px; }
+
+.breed-title-nfo { margin-bottom: 20px; }
+.breed-title-nfo h3 { line-height: 1; margin-bottom: 0; }
+
+.single-breed-info li { width: 24%; margin-bottom: 10px; }
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) { .single-breed-info li { width: 23%; } }
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991.98px) { .single-breed-info li { width: 48%; } }
+.single-breed-info li.list-inline-item:not(:last-child) { margin-right: 5px; }
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991.98px) { .single-breed-info li.list-inline-item:nth-child(2n) { margin-right: 0; } }
+.single-breed-info li a { background-color: #eef1f7; padding: 15px 8px; display: block; text-align: center; margin: 0; }
+.single-breed-info li a:hover { background-color: #407aff; color: #ffffff; }
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) { .single-breed-info li a { font-size: 12px; } }
+
+.breed-progress { border-radius: 3px; background-color: #ffffff; box-shadow: 0px 10px 20px 0px rgba(0, 29, 103, 0.1); min-height: 60px; padding: 15px; margin-bottom: 15px; }
+.breed-progress div[class*=col-]:first-child { padding-right: 0; }
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991.98px) { .breed-progress div[class*=col-]:first-child { padding-right: 15px; } }
+@media only screen and (max-width: 767px) { .breed-progress div[class*=col-]:first-child { margin-bottom: 10px; } }
+.breed-progress div[class*=col-]:last-child { padding-left: 0; }
+@media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991.98px), only screen and (min-width: 992px) and (max-width: 1199.98px) { .breed-progress div[class*=col-]:last-child { padding-left: 15px; } }
+
+.progress-circle { width: 40px; height: 40px; background: #33d8bb; border-radius: 100%; border: 12px solid #d6f7f1; }
+
+.aqua-circle { background: #33d8bb; border: 12px solid #d6f7f1; }
+
+.cyan-circle { background: #0de7f5; border: 12px solid #cffafd; }
+
+.blue-circle { background: #407aff; border: 12px solid #d9e4ff; }
+
+.slateblue-circle { background: #9369e9; border: 12px solid #e9e1fb; }
+
+.pink-circle { background: #f574d8; border: 12px solid #fde3f7; }
+
+.progress { width: 100%; border-radius: 30px; height: 20px; background-color: #eef1f7; }
+
+.progress-bar { border-radius: 30px; }
+
+.aqua-progress-bar { background: #33d8bb; }
+
+.cyan-progress-bar { background: #0de7f5; }
+
+.blue-progress-bar { background: #407aff; }
+
+.slateblue-progress-bar { background: #9369e9; }
+
+.pink-progress-bar { background: #f574d8; }
+
+.progress-value { font-weight: 700; }
+
+p.aqua-progress-value { color: #33d8bb; }
+
+p.cyan-progress-value { color: #0de7f5; }
+
+p.blue-progress-value { color: #407aff; }
+
+p.slateblue-progress-value { color: #9369e9; }
+
+p.pink-progress-value { color: #f574d8; }
+
+.progress-info .list-inline-item:not(:last-child) { margin-right: 30px; }
+.progress-info .list-inline-item:first-child { margin-right: 20px; }
+
+.f-22 { font-size: 22px; }
+
+.recent-breeds .breed-img-box { border-radius: 8px; min-height: 120px; }
 
 /*# sourceMappingURL=style.css.map */
