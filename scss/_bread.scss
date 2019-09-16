@@ -14,18 +14,14 @@
     border-radius: 15px;
     background-color: $white;
     box-shadow: 0px 2px 5px 0px rgba(0, 29, 103, 0.15);
+  >a{
+    display: block;
+  }
+  img{
+    border-radius: 15px;
+  }
 }
-.breed-img-box{
-  min-height: 200px;
-  border-radius: 15px;
-  background-color: $gray;
-  display: block;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+
 .breed-content-box{
   padding: 40px 30px;
   @media #{$md-layout,$lg-layout} {
@@ -47,7 +43,7 @@
     }
     a{
       background-color: $aliceblue;
-      padding: 15px 8px;
+      padding: 15px 5px;
       display: block;
       margin: 0;
       &:hover{
@@ -100,20 +96,15 @@ a.read-more{
     margin-bottom: 60px;
   }
 }
+
 .single-breed-img-box{
   display: block;
-  border-radius: 15px;
-  background-color: rgb(229, 239, 252);
-  min-height: 400px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  @media #{$md-layout,$xs-layout} {
-    min-height: 300px;
+  img{
+    border-radius: 15px;
   }
 }
+
+
 .single-breed-content-box{
   padding: 35px 0;
   p{
@@ -271,8 +262,9 @@ p.pink-progress-value{
   font-size: 22px;
 }
 .recent-breeds{
-  .breed-img-box{
+
+  img{
     border-radius: 8px;
-    min-height: 120px;
   }
+
 }
